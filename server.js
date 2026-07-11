@@ -25,8 +25,13 @@ CREATE TABLE IF NOT EXISTS applications (
 
 // CORS
 app.use(cors({
-    origin: "http://localhost:3000",
-    credentials: true
+
+    origin: [
+        "https://respect-one.onrender.com"
+    ],
+
+    credentials:true
+
 }));
 
 
